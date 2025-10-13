@@ -4,16 +4,15 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   plugins: [react()],
-
-  test: {
-    environment: 'jsdom',
-    setupFiles: ['./vitest.setup.ts'],
-    include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
-    globals: true,
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
+  },
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
+    setupFiles: ['./src/test/setup.ts'],
   },
 })

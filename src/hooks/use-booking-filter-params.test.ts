@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
-import { loadBookingFilterParams } from './use-booking-filter-params'
 import { BookingStatus } from '@/data/enums/booking-status'
+import { loadBookingFilterParams } from './use-booking-filter-params'
 
 describe('loadBookingFilterParams', () => {
   test('deve retornar valores padrão quando não há parâmetros', () => {

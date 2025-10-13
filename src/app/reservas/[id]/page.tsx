@@ -46,7 +46,7 @@ export default async function Page({ params }: Props) {
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <Link href="/reservas">
-          <Button variant="outline">
+          <Button data-testid="back-button" variant="outline">
             <ChevronLeftIcon className="size-4" />
             Voltar
           </Button>

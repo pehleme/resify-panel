@@ -1,8 +1,3 @@
-import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
-import { Metadata } from 'next'
-import { ErrorBoundary } from 'next/dist/client/components/error-boundary'
-import { SearchParams } from 'nuqs/server'
-import { Suspense } from 'react'
 import { ErrorFallback } from '@/components/error-fallback'
 import { BookingDataTable } from '@/components/tables/booking/data-table'
 import { BookingFilters } from '@/components/tables/booking/filters'
@@ -11,6 +6,11 @@ import { Card, CardContent } from '@/components/ui/card'
 import { loadBookingFilterParams } from '@/hooks/use-booking-filter-params'
 import { createQueryClient } from '@/lib/ssr-query-client'
 import { getBookings } from '@/services/booking/get-bookings'
+import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
+import { Metadata } from 'next'
+import { ErrorBoundary } from 'next/dist/client/components/error-boundary'
+import { SearchParams } from 'nuqs/server'
+import { Suspense } from 'react'
 
 export const revalidate = 5
 
@@ -34,10 +34,10 @@ export default async function Page(props: Props) {
     limit: filter.limit,
   }
 
-  await queryClient.prefetchQuery({
-    queryKey: ['/bookings', queryParams],
-    queryFn: () => getBookings(queryParams),
-  })
+  // await queryClient.prefetchQuery({
+  //   queryKey: ['/bookings', queryParams],
+  //   queryFn: () => getBookings(queryParams),
+  // })
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>

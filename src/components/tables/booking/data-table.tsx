@@ -1,8 +1,5 @@
 'use client'
 
-import { useSuspenseQuery } from '@tanstack/react-query'
-import { Eye } from 'lucide-react'
-import Link from 'next/link'
 import { BookingStatusBadge } from '@/components/booking-status-badge'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -17,6 +14,9 @@ import {
 import { useBookingFilterParams } from '@/hooks/use-booking-filter-params'
 import { formatDate } from '@/lib/utils'
 import { getBookings } from '@/services/booking/get-bookings'
+import { useSuspenseQuery } from '@tanstack/react-query'
+import { Eye } from 'lucide-react'
+import Link from 'next/link'
 import { EmptyState, NoResults } from './empty-states'
 import { BookingPagination } from './pagination'
 
@@ -84,7 +84,11 @@ export function BookingDataTable() {
               </TableCell>
               <TableCell className="bg-background sticky right-0 z-30 w-[100px] text-right">
                 <Link href={`/reservas/${booking.id}`}>
-                  <Button size="icon-sm" variant="outline">
+                  <Button
+                    data-testid="details-button"
+                    size="icon-sm"
+                    variant="outline"
+                  >
                     <Eye className="h-4 w-4" />
                     <span className="sr-only">Detalhes</span>
                   </Button>

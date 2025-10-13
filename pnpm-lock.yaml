@@ -19,6 +19,9 @@ importers:
       '@radix-ui/react-slot':
         specifier: ^1.2.3
         version: 1.2.3(@types/react@19.2.2)(react@19.1.0)
+      '@t3-oss/env-nextjs':
+        specifier: ^0.13.8
+        version: 0.13.8(typescript@5.9.3)(zod@4.1.12)
       '@tanstack/react-query':
         specifier: ^5.90.2
         version: 5.90.2(react@19.1.0)
@@ -58,6 +61,9 @@ importers:
       tailwind-merge:
         specifier: ^3.3.1
         version: 3.3.1
+      zod:
+        specifier: ^4.1.12
+        version: 4.1.12
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -65,6 +71,9 @@ importers:
       '@eslint/js':
         specifier: ^9.37.0
         version: 9.37.0
+      '@msw/playwright':
+        specifier: ^0.4.2
+        version: 0.4.2(msw@2.11.5(@types/node@20.19.19)(typescript@5.9.3))
       '@playwright/test':
         specifier: ^1.49.1
         version: 1.56.0
@@ -110,6 +119,9 @@ importers:
       eslint-plugin-playwright:
         specifier: ^2.2.2
         version: 2.2.2(eslint@9.37.0(jiti@2.6.1))
+      happy-dom:
+        specifier: ^20.0.0
+        version: 20.0.0
       jsdom:
         specifier: ^25.0.1
         version: 25.0.1
@@ -136,7 +148,7 @@ importers:
         version: 8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       vitest:
         specifier: ^3.2.4
-        version: 3.2.4(@types/node@20.19.19)(jiti@2.6.1)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.11.5(@types/node@20.19.19)(typescript@5.9.3))
+        version: 3.2.4(@types/node@20.19.19)(happy-dom@20.0.0)(jiti@2.6.1)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.11.5(@types/node@20.19.19)(typescript@5.9.3))
 
 packages:
   '@adobe/css-tools@4.4.4':
@@ -1003,6 +1015,15 @@ packages:
         integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==,
       }
 
+  '@msw/playwright@0.4.2':
+    resolution:
+      {
+        integrity: sha512-xJnHJBkxCF+wcusYAFTDTW1kiD+WVsuYMSxcqvaAbe/mhy73oxkcqUbsiqZsKPdNrXIQQtkCyX5vSP5ZaPUHdA==,
+      }
+    engines: { node: '>=20.0.0' }
+    peerDependencies:
+      msw: ^2.10.3
+
   '@mswjs/interceptors@0.39.7':
     resolution:
       {
@@ -1770,6 +1791,46 @@ packages:
         integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==,
       }
 
+  '@t3-oss/env-core@0.13.8':
+    resolution:
+      {
+        integrity: sha512-L1inmpzLQyYu4+Q1DyrXsGJYCXbtXjC4cICw1uAKv0ppYPQv656lhZPU91Qd1VS6SO/bou1/q5ufVzBGbNsUpw==,
+      }
+    peerDependencies:
+      arktype: ^2.1.0
+      typescript: '>=5.0.0'
+      valibot: ^1.0.0-beta.7 || ^1.0.0
+      zod: ^3.24.0 || ^4.0.0-beta.0
+    peerDependenciesMeta:
+      arktype:
+        optional: true
+      typescript:
+        optional: true
+      valibot:
+        optional: true
+      zod:
+        optional: true
+
+  '@t3-oss/env-nextjs@0.13.8':
+    resolution:
+      {
+        integrity: sha512-QmTLnsdQJ8BiQad2W2nvV6oUpH4oMZMqnFEjhVpzU0h3sI9hn8zb8crjWJ1Amq453mGZs6A4v4ihIeBFDOrLeQ==,
+      }
+    peerDependencies:
+      arktype: ^2.1.0
+      typescript: '>=5.0.0'
+      valibot: ^1.0.0-beta.7 || ^1.0.0
+      zod: ^3.24.0 || ^4.0.0-beta.0
+    peerDependenciesMeta:
+      arktype:
+        optional: true
+      typescript:
+        optional: true
+      valibot:
+        optional: true
+      zod:
+        optional: true
+
   '@tailwindcss/node@4.1.14':
     resolution:
       {
@@ -2063,6 +2124,12 @@ packages:
     resolution:
       {
         integrity: sha512-xMAgYwceFhRA2zY+XbEA7mxYbA093wdiW8Vu6gZPGWy9cmOyU9XesH1tNcEWsKFd5Vzrqx5T3D38PWx1FIIXkA==,
+      }
+
+  '@types/whatwg-mimetype@3.0.2':
+    resolution:
+      {
+        integrity: sha512-c2AKvDT8ToxLIOUlN51gTiHXflsfIFisS4pO7pDPoKouJCESkhZnEy623gwP9laCy5lnLDAw1vAzu2vM2YLOrA==,
       }
 
   '@typescript-eslint/eslint-plugin@8.46.0':
@@ -3474,6 +3541,13 @@ packages:
         integrity: sha512-mS1lbMsxgQj6hge1XZ6p7GPhbrtFwUFYi3wRzXAC/FmYnyXMTvvI3td3rjmQ2u8ewXueaSvRPWaEcgVVOT9Jnw==,
       }
     engines: { node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0 }
+
+  happy-dom@20.0.0:
+    resolution:
+      {
+        integrity: sha512-GkWnwIFxVGCf2raNrxImLo397RdGhLapj5cT3R2PT7FwL62Ze1DROhzmYW7+J3p9105DYMVenEejEbnq5wA37w==,
+      }
+    engines: { node: '>=20.0.0' }
 
   has-bigints@1.1.0:
     resolution:
@@ -5447,6 +5521,13 @@ packages:
       }
     engines: { node: '>=18' }
 
+  whatwg-mimetype@3.0.0:
+    resolution:
+      {
+        integrity: sha512-nt+N2dzIutVRxARx1nghPKGv1xHikU7HKdfafKkLNLindmPU/ch3U31NOCGGA/dmPcmb1VlofO0vnKAcsm0o/Q==,
+      }
+    engines: { node: '>=12' }
+
   whatwg-mimetype@4.0.0:
     resolution:
       {
@@ -5601,6 +5682,12 @@ packages:
         integrity: sha512-U/PBtDf35ff0D8X8D0jfdzHYEPFxAI7jJlxZXwCSez5M3190m+QobIfh+sWDWSHMCWWJN2AWamkegn6vr6YBTw==,
       }
     engines: { node: '>=18' }
+
+  zod@4.1.12:
+    resolution:
+      {
+        integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==,
+      }
 
 snapshots:
   '@adobe/css-tools@4.4.4': {}
@@ -6057,6 +6144,12 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
+  '@msw/playwright@0.4.2(msw@2.11.5(@types/node@20.19.19)(typescript@5.9.3))':
+    dependencies:
+      '@mswjs/interceptors': 0.39.7
+      msw: 2.11.5(@types/node@20.19.19)(typescript@5.9.3)
+      outvariant: 1.4.3
+
   '@mswjs/interceptors@0.39.7':
     dependencies:
       '@open-draft/deferred-promise': 2.2.0
@@ -6503,6 +6596,18 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+  '@t3-oss/env-core@0.13.8(typescript@5.9.3)(zod@4.1.12)':
+    optionalDependencies:
+      typescript: 5.9.3
+      zod: 4.1.12
+
+  '@t3-oss/env-nextjs@0.13.8(typescript@5.9.3)(zod@4.1.12)':
+    dependencies:
+      '@t3-oss/env-core': 0.13.8(typescript@5.9.3)(zod@4.1.12)
+    optionalDependencies:
+      typescript: 5.9.3
+      zod: 4.1.12
+
   '@tailwindcss/node@4.1.14':
     dependencies:
       '@jridgewell/remapping': 2.3.5
@@ -6677,6 +6782,8 @@ snapshots:
       csstype: 3.1.3
 
   '@types/statuses@2.0.6': {}
+
+  '@types/whatwg-mimetype@3.0.2': {}
 
   '@typescript-eslint/eslint-plugin@8.46.0(@typescript-eslint/parser@8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
@@ -7702,6 +7809,12 @@ snapshots:
   graphemer@1.4.0: {}
 
   graphql@16.11.0: {}
+
+  happy-dom@20.0.0:
+    dependencies:
+      '@types/node': 20.19.19
+      '@types/whatwg-mimetype': 3.0.2
+      whatwg-mimetype: 3.0.0
 
   has-bigints@1.1.0: {}
 
@@ -8866,7 +8979,7 @@ snapshots:
       jiti: 2.6.1
       lightningcss: 1.30.1
 
-  vitest@3.2.4(@types/node@20.19.19)(jiti@2.6.1)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.11.5(@types/node@20.19.19)(typescript@5.9.3)):
+  vitest@3.2.4(@types/node@20.19.19)(happy-dom@20.0.0)(jiti@2.6.1)(jsdom@25.0.1)(lightningcss@1.30.1)(msw@2.11.5(@types/node@20.19.19)(typescript@5.9.3)):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.4
@@ -8893,6 +9006,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 20.19.19
+      happy-dom: 20.0.0
       jsdom: 25.0.1
     transitivePeerDependencies:
       - jiti
@@ -8917,6 +9031,8 @@ snapshots:
   whatwg-encoding@3.1.1:
     dependencies:
       iconv-lite: 0.6.3
+
+  whatwg-mimetype@3.0.0: {}
 
   whatwg-mimetype@4.0.0: {}
 
@@ -9016,3 +9132,5 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yoctocolors-cjs@2.1.3: {}
+
+  zod@4.1.12: {}

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { formatDate, cn } from './utils'
+import { cn, formatDate } from './utils'
 
 describe('utils', () => {
   describe('formatDate', () => {

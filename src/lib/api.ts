@@ -1,3 +1,4 @@
 import ky from 'ky'
+import { env } from '@/env'
 
-export const api = ky.create({ prefixUrl: process.env.NEXT_PUBLIC_API_URL })
+export const api = ky.create({ prefixUrl: env.NEXT_PUBLIC_API_URL })

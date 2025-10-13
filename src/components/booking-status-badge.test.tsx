@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, test } from 'vitest'
-import { BookingStatusBadge } from './booking-status-badge'
 import { BookingStatus } from '@/data/enums/booking-status'
+import { BookingStatusBadge } from './booking-status-badge'
 
 describe('BookingStatusBadge', () => {
   test('deve renderizar status confirmado corretamente', () => {
