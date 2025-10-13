@@ -1,0 +1,202 @@
+[
+  {
+    "id": "R-00123",
+    "passageiro": "Ana Souza",
+    "companhia": "LATAM",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-15",
+    "horaVoo": "13:20",
+    "pax": 3,
+    "observacoes": "Assento preferencial"
+  },
+  {
+    "id": "R-00124",
+    "passageiro": "João Silva",
+    "companhia": "GOL",
+    "status": "PENDENTE",
+    "dataVoo": "2025-11-20",
+    "horaVoo": "09:50",
+    "pax": 1,
+    "observacoes": ""
+  },
+  {
+    "id": "R-00125",
+    "passageiro": "Maria Santos",
+    "companhia": "Azul",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-18",
+    "horaVoo": "16:30",
+    "pax": 2,
+    "observacoes": "Refeição especial solicitada"
+  },
+  {
+    "id": "R-00126",
+    "passageiro": "Pedro Costa",
+    "companhia": "LATAM",
+    "status": "CANCELADO",
+    "dataVoo": "2025-11-12",
+    "horaVoo": "08:15",
+    "pax": 1,
+    "observacoes": "Cancelamento por motivos pessoais"
+  },
+  {
+    "id": "R-00127",
+    "passageiro": "Carla Lima",
+    "companhia": "GOL",
+    "status": "PENDENTE",
+    "dataVoo": "2025-11-25",
+    "horaVoo": "14:45",
+    "pax": 4,
+    "observacoes": ""
+  },
+  {
+    "id": "R-00128",
+    "passageiro": "Lucas Almeida",
+    "companhia": "Azul",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-22",
+    "horaVoo": "11:10",
+    "pax": 2,
+    "observacoes": "Bagagem extra"
+  },
+  {
+    "id": "R-00129",
+    "passageiro": "Fernanda Ribeiro",
+    "companhia": "LATAM",
+    "status": "CANCELADO",
+    "dataVoo": "2025-11-10",
+    "horaVoo": "07:50",
+    "pax": 1,
+    "observacoes": ""
+  },
+  {
+    "id": "R-00130",
+    "passageiro": "Rafael Oliveira",
+    "companhia": "GOL",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-19",
+    "horaVoo": "15:30",
+    "pax": 3,
+    "observacoes": "Check-in antecipado"
+  },
+  {
+    "id": "R-00131",
+    "passageiro": "Beatriz Martins",
+    "companhia": "Azul",
+    "status": "PENDENTE",
+    "dataVoo": "2025-11-21",
+    "horaVoo": "10:00",
+    "pax": 2,
+    "observacoes": ""
+  },
+  {
+    "id": "R-00132",
+    "passageiro": "Gustavo Pereira",
+    "companhia": "LATAM",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-23",
+    "horaVoo": "17:40",
+    "pax": 1,
+    "observacoes": "Voo direto"
+  },
+  {
+    "id": "R-00133",
+    "passageiro": "Mariana Costa",
+    "companhia": "GOL",
+    "status": "PENDENTE",
+    "dataVoo": "2025-11-14",
+    "horaVoo": "12:15",
+    "pax": 4,
+    "observacoes": ""
+  },
+  {
+    "id": "R-00134",
+    "passageiro": "Rodrigo Santos",
+    "companhia": "Azul",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-26",
+    "horaVoo": "18:20",
+    "pax": 5,
+    "observacoes": "Assentos juntos"
+  },
+  {
+    "id": "R-00135",
+    "passageiro": "Patrícia Souza",
+    "companhia": "LATAM",
+    "status": "CANCELADO",
+    "dataVoo": "2025-11-09",
+    "horaVoo": "06:30",
+    "pax": 1,
+    "observacoes": ""
+  },
+  {
+    "id": "R-00136",
+    "passageiro": "Eduardo Lima",
+    "companhia": "GOL",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-28",
+    "horaVoo": "20:00",
+    "pax": 2,
+    "observacoes": "Preferência janela"
+  },
+  {
+    "id": "R-00137",
+    "passageiro": "Juliana Rocha",
+    "companhia": "Azul",
+    "status": "PENDENTE",
+    "dataVoo": "2025-11-17",
+    "horaVoo": "09:00",
+    "pax": 1,
+    "observacoes": ""
+  },
+  {
+    "id": "R-00138",
+    "passageiro": "Felipe Santos",
+    "companhia": "LATAM",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-24",
+    "horaVoo": "19:10",
+    "pax": 3,
+    "observacoes": "Embarque prioritário"
+  },
+  {
+    "id": "R-00139",
+    "passageiro": "Isabela Moraes",
+    "companhia": "GOL",
+    "status": "CANCELADO",
+    "dataVoo": "2025-11-11",
+    "horaVoo": "08:40",
+    "pax": 1,
+    "observacoes": "Problemas de documentação"
+  },
+  {
+    "id": "R-00140",
+    "passageiro": "Thiago Ferreira",
+    "companhia": "Azul",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-27",
+    "horaVoo": "13:55",
+    "pax": 2,
+    "observacoes": ""
+  },
+  {
+    "id": "R-00141",
+    "passageiro": "Daniela Nunes",
+    "companhia": "LATAM",
+    "status": "PENDENTE",
+    "dataVoo": "2025-11-13",
+    "horaVoo": "11:35",
+    "pax": 4,
+    "observacoes": "Aguardando pagamento"
+  },
+  {
+    "id": "R-00142",
+    "passageiro": "Bruno Carvalho",
+    "companhia": "GOL",
+    "status": "CONFIRMADO",
+    "dataVoo": "2025-11-29",
+    "horaVoo": "21:10",
+    "pax": 1,
+    "observacoes": "Sem bagagem"
+  }
+]
