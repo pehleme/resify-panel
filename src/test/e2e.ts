@@ -7,9 +7,9 @@ interface Fixtures {
 }
 
 const test = base.extend<Fixtures>({
-  // msw: createNetworkFixture({
-  //   initialHandlers: handlers,
-  // }),
+  msw: createNetworkFixture({
+    initialHandlers: handlers,
+  }),
 })
 
 export { expect, test }
